@@ -1,0 +1,1 @@
+cmake -S . -B C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/swil -G "MinGW Makefiles"

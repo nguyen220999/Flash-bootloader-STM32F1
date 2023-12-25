@@ -1,0 +1,134 @@
+= DDD - SOFTWARE INTERLOCK
+Tran Hoang Nguyen 
+1.0, Dec 13, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. General information
+
+|===
+| Design decision document | 
+
+|Project
+|FBL
+
+|DDD version
+|1.0
+
+|DDD host
+|Tran Hoang Nguyen
+
+|Motivation
+|SW need a machanism to assure prevent writing flash unexpectively
+
+|Goal
+|This DDD aim to choose suitable machanism to protect writing flash
+
+|Rating/ Stakeholder
+|1. Significant impact on: developer +
+2. Need to coolaborate: +
+3. To be informed about result: developer
+
+|Decision
+| brief description
+
+|Approval status
+|Open
+
+|===
+
+== 2. Problem description
+
+SW need a machanism to assure prevent writing flash unexpectively. Only when truth request update application software from truth host system, flash driver is valid.
+
+
+_Constraints:_
+NA
+
+== 3. Solution Alternatives
+
+=== 3.1 Set up security check before using flash driver (Solution A)
+
+When FBL need use API of flash driver, it need to check security. When Host system request update app SW, FBL will provide seed, host system must provide public key, FBL will check and perform call API follow request.
+
+=== 3.2 Flash driver is not stored in system (Solution B)
+
+Flash driver is stored in host system. When host system need reflash new app software, it will transfer flash driver to FBL
+
+== 4. Design Decision Criteria’s/ Architecture divers
+=== 4.1 Complexity, Modularity
+Easy to handle
+
+=== 4.2 Reusability, Portability, Deployability
+
+
+== 5. Evaluation of solutions
+
+|===
+|Summary |Solution A |Solution B
+
+|Short description
+|
+|
+
+|Detail description
+|
+|
+
+|Benefits
+|
+|
+
+|Weakness
+|
+|
+
+|Evaluation/Assessment (*)
+|
+|
+
+|Complexity
+|+
+|-
+
+|Modularity
+|-
+|+
+
+|Reusability, Portability, Deployability
+|
+|
+
+|Reuse, Make or buy
+|
+|
+
+|Flexibility, Modifiability, Scalability, Maintainability
+|
+|
+
+|Technical Feasibility
+|
+|
+
+|Project-specific Evaluation / Assessment criteria
+|(Architecture driver)
+|
+
+|
+|
+|
+
+|===
+
+(*)Define the rating for the evaluation here:e.g. ++, +, o, -, -- or 1, 2, 3, 4, 5
+
+== 6. Design Decision Conclusion
+_Solution B_
+
+== 7. References
+
+== Contact

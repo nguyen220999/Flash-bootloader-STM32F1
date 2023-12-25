@@ -1,0 +1,412 @@
+= IDD - FLASH BOOTLOADER COMMUNICATION PROTOCOL DOCUMENT
+Tran Hoang Nguyen <hoangnguyen220999@gmail.com>
+1.0, Dec 8, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. Introduction
+
+=== 1.1 General information
+
+|===
+| Design decision document | 
+
+|Project
+|FBL
+
+|IDD version
+|1.0
+
+|IDD host
+|Tran Hoang Nguyen
+
+|Motivation
+|To perform communication with external system, FBL need provide interface information for external system
+
+|Goal
+|This IDD aim to provide information about interface when external system need communicate with FBL
+
+|Rating/ Stakeholder
+|1. Significant impact on: developer +
+2. Need to coolaborate: +
+3. To be informed about result: developer
+
+|Approval status
+|Open
+
+|===
+
+Revision History
+
+|===
+|Date |Version |Description |Author
+
+|Dec 8, 2023
+|1.0
+|Init version
+|Tran Hoang Nguyen
+
+|===
+
+=== 1.2 Overview
+
+FBL need communication with Diag tool to receive request/data from tool and respond information
+
+
+== 2. General description
+
+=== 2.1 Message introduction
+
+Each communication between the system and Diag tool is called a message. A message is a set of data structures defined by the FBL for communication between the external system and FBL.
+
+=== 2.2 Message category
+
+|===
+| Message type |Function description | Message sending direction
+
+| Request message
+| Request messages are used for external systems to send requests to FBL
+| Host System -> FBL
+
+| Response status Message
+| A response message is a response from FBL to Host System about status of request
+| FBL -> Host System
+
+| NRC message
+| NRC message is a response from FBL to Host system about the failure of request message
+| FBL -> Host System
+
+|===
+
+=== 2.3 Request Principles
+
+FBL determines a unique message request based on the requestId in the message. If requestId is a process handling, first message of Tool will indicate requestId, next message of tool will contain data of request sequence.
+
+=== 2.4 Response Description
+
+After receiving the request message from the host system, FBL will strictly verify the content information in the request message. 
+
+* If the content information has failure or unfit with data stored in FBL, FBL will return NRC. 
+
+* If FBL handle request unsuccessfully, FBL will send NRC to host system.
+
+* If FBL handle request successfully or right receive data or need more time to process, FBL will send Response status Message to host system.
+
+* FBL only respond "need more time to process" maximum one time of each receive message. Next respond of FBL after "need more time to process" only can NRC or status Message.
+
+* When FBL send "need more time to process", Host system must wait FBL send status message, then Host system can continue send request message. If Host send message when recieve "need more time to process", FBL will send NRC.
+
+* Maximum wait time from "need more time to process" to send status message/NRC of FBL is 3s.
+
+* Maximum wait time to receive message in a service proccess is 5s. After 5s, FBL will send timeout NRC.
+
+
+== 3. Protocol description
+
+=== 3.1 Hardware communication interface
+
+* CAN communication
+* CAN standard (8 bytes data)
+* Bit rate: 
+
+=== 3.2 Client-server communication pattern
+
+Clients and servers exchange messages in a request–response messaging pattern. The client sends a request, and the server returns a response.
+
+== 4. Bussiness description
+
+|===
+| Business scenario | Condition of use | Using the interface
+
+| Request clear application software
+|
+|
+
+| Request update application software
+|
+|
+
+| Request update SWIL software
+|
+|
+
+|===
+
+== 5. Interface overview
+
+=== 5.1 Service ID/ NRC ID
+
+==== 5.1.1 Service ID
+
+|===
+| Service ID | Description
+
+|
+| Erase application software
+
+|
+| Flash SWIL software
+
+|
+| Flash application software
+
+|===
+
+==== 5.1.2 SubService ID
+
+|===
+| Service ID | SubService ID |Description
+
+| NA
+| NA
+| NA
+
+|===
+
+==== 5.1.3 NRC ID
+
+|===
+| NRC ID | Description
+
+| 0x10
+| generalReject
+
+| 0x11
+| serviceNotSupported
+
+| 0x13
+| incorrectMessageLengthOrInvalidFormat
+
+| 0x22
+| conditionNotCorrect
+
+| 
+|
+
+|===
+
+=== 5.2 Message layout
+
+==== 5.2.1 Request message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of request msg | service ID | subservice/Data | Data/Reserved| Data/Reserved| Data/Reserved| Data/Reserved| Data/Reserved 
+|===
+
+==== 5.2.2 Response status Message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of resp msg | service ID + 40 | subservice/Data/Status | Data/Status/Reserved| Data/Reserved| Data/Reserved| Data/Reserved| Data/Reserved 
+|===
+
+==== 5.2.3 NRC message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of resp msg | 7F | service ID | subservice/NRC| NRC/Reserved| Reserved| Reserved| Reserved 
+|===
+
+== 6. Interface description
+
+_if FBL respond NRC in any step, sequence will finish and need start sequence from scrach again_
+
+=== 6.1 Request erase application software
+
+==== 6.1.1 Service Condition
+
+* SWIL must be available before request erase application software
+
+==== 6.1.1 Request Message
+
+* First request message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of request msg | service ID | Reserved | Reserved| Reserved| Reserved| Reserved| Reserved 
+|===
+
+==== 6.1.2 Response Message
+
+* Response status Message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of resp msg | service ID + 40 | Status | Reserved| Reserved| Reserved| Reserved| Reserved 
+|===
+
+|===
+| Status ID | Description
+
+|
+|
+
+|===
+
+* NRC message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of resp msg | 7F | service ID | NRC | Reserved| Reserved| Reserved| Reserved 
+|===
+
+==== 6.2.3 Service sequence
+
+|===
+| Step | Host system | FBL
+
+|Step 1
+| First request message
+|
+
+| Step 2
+|
+| Response status Message/ NRC message
+
+
+|===
+
+=== 6.2 Request flash SWIL software
+
+==== 6.2.1 Service Condition
+
+NA
+
+==== 6.2.1 Request Message
+
+* First request message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of request msg | service ID | Reserved | Reserved| Reserved| Reserved| Reserved| Reserved 
+|===
+
+* Imformation message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of request msg | service ID | Start address | Start address| Start address| Start address| App size| App size 
+|===
+
+* Data message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | CRC value | service ID | App address | App address| App address| App address| App data| App data 
+|===
+
+* End indicate message
+
+|===
+| Byte | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
+| Value | Length of request msg | service ID | End indicate | Reserved| Reserved| Reserved| Reserved| Reserved 
+|===
+
+
+==== 6.2.2 Response Message
+
+_Same as Request erase application software_
+
+==== 6.2.3 Service sequence
+
+|===
+| Step | Host system | FBL
+
+|Step 1
+| First request message
+|
+
+| Step 2
+|
+| Response status Message/ NRC message
+
+| Step 3
+| Imformation message
+|
+
+| Step 4
+|
+| Response status Message/ NRC message
+
+| Step 5
+| Data message
+|
+
+| Step 6
+|
+| Response status Message/ NRC message
+
+| Step 7
+| Loop in step 5 and 6 to end address
+|
+
+| Step 8
+| End indicate message
+|
+
+| Step 9
+|
+| Response status Message/ NRC message
+
+|===
+
+
+=== 6.1 Request flash application software
+
+==== 6.1.1 Service Condition
+
+* SWIL must be available before request erase application software
+* Application software must be erased before starting of request flash application software
+
+==== 6.1.1 Request Message
+
+_Same as Request flash SWIL software_
+
+==== 6.1.2 Response Message
+
+_Same as Request erase application software_
+
+==== 6.2.3 Service sequence
+
+_Same as Request flash SWIL software_
+
+== 7. Glossary
+
+|===
+|Term |Definition
+
+|IDD
+|Interface design document
+
+|SWIL
+|Software interlock
+
+|CAN
+|controller area network
+
+|NRC
+|Negative respond code
+
+|Host system
+|
+
+|===
+
+== 8. Reference
+
+
+== Contact

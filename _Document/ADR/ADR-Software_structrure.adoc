@@ -1,0 +1,104 @@
+= ARCHITECTURE DECISION RECORD - SOFTWARE STRUCTURE
+Tran Hoang Nguyen 
+1.0, Dec 9, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. Information
+
+|===
+| Architecture decision record | 
+
+|Project
+|FBL
+
+|ADR version
+|1.0
+
+|ADR host
+|Tran Hoang Nguyen
+
+|Motivation
+|
+
+|Goal
+|
+
+|Rating/ Stakeholder
+|1. Significant impact on: developer +
+2. Need to coolaborate: +
+3. To be informed about result: developer
+
+|Approval status
+|Open
+
+|===
+
+Revision History
+
+|===
+|Date |Version |Description |Author
+
+|Dec 9, 2023
+|1.0
+|Init version
+|Tran Hoang Nguyen
+
+|===
+
+
+== 2. Context
+
+This is structure of software
+Software structure need easy to maintain
+
+== 3. Decision
+
+=== 3.1 Component based architecture
+
+Each component is a module that encapsulate functionality.
+
+
+=== 3.2 Software structure
+
+Each module in software will handle a function
+
+* MCAL
+* Main
+* Service handle
+* SWIL handle
+* Flashing handle
+* Diag communication
+* Nvm handle
+
+== 4. Consequences
+
+Software will be separate to 2 part
+
+* Application part include functionality module
+
+* MCAL part include driver for hardware
+
+== 10. Appendices
+
+|===
+|Term |Definition
+
+|
+|
+
+|===
+
+== 11. Reference
+
+|===
+| Term | Link
+
+|ADR Michael Nygard template
+|
+|===
+
+

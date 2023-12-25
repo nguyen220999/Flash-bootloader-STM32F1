@@ -1,0 +1,60 @@
+[2023-12-25T11:03:29.496626 15668] === CCACHE 4.8.2 STARTED =========================================
+[2023-12-25T11:03:29.496772 15668] Configuration file: C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf
+[2023-12-25T11:03:29.496795 15668] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2023-12-25T11:03:29.496795 15668] Config: (default) absolute_paths_in_stderr = false
+[2023-12-25T11:03:29.496795 15668] Config: (default) base_dir = 
+[2023-12-25T11:03:29.496795 15668] Config: (command line) cache_dir = C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/.ccache
+[2023-12-25T11:03:29.496795 15668] Config: (default) compiler = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) compiler_check = mtime
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) compiler_type = auto
+[2023-12-25T11:03:29.496795 15668] Config: (environment) compression = true
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) compression_level = 0
+[2023-12-25T11:03:29.496795 15668] Config: (default) cpp_extension = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) debug = false
+[2023-12-25T11:03:29.496795 15668] Config: (default) debug_dir = 
+[2023-12-25T11:03:29.496795 15668] Config: (environment) depend_mode = true
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) direct_mode = true
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) disable = false
+[2023-12-25T11:03:29.496795 15668] Config: (default) extra_files_to_hash = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) file_clone = false
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) hard_link = false
+[2023-12-25T11:03:29.496795 15668] Config: (environment) hash_dir = true
+[2023-12-25T11:03:29.496795 15668] Config: (default) ignore_headers_in_manifest = 
+[2023-12-25T11:03:29.496795 15668] Config: (default) ignore_options = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) inode_cache = true
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) keep_comments_cpp = false
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) log_file = C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccachelog.txt
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) max_files = 1000
+[2023-12-25T11:03:29.496795 15668] Config: (environment) max_size = 10.0 GB
+[2023-12-25T11:03:29.496795 15668] Config: (default) msvc_dep_prefix = Note: including file:
+[2023-12-25T11:03:29.496795 15668] Config: (default) namespace = 
+[2023-12-25T11:03:29.496795 15668] Config: (default) path = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) pch_external_checksum = false
+[2023-12-25T11:03:29.496795 15668] Config: (default) prefix_command = 
+[2023-12-25T11:03:29.496795 15668] Config: (default) prefix_command_cpp = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) read_only = false
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) read_only_direct = false
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) recache = false
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) remote_only = false
+[2023-12-25T11:03:29.496795 15668] Config: (default) remote_storage = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) reshare = false
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) run_second_cpp = true
+[2023-12-25T11:03:29.496795 15668] Config: (default) sloppiness = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) stats = true
+[2023-12-25T11:03:29.496795 15668] Config: (default) stats_log = 
+[2023-12-25T11:03:29.496795 15668] Config: (C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache\ccache.conf) temporary_dir = C:\Users\tgr6hc\Desktop\Embedded_full\GatewayECU_git\FlashBootLoader\.ccache/tmp
+[2023-12-25T11:03:29.496795 15668] Config: (default) umask = 
+[2023-12-25T11:03:29.497206 15668] Command line: C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU/Toolchain/ccache-4.8.2-windows-x86_64/ccache cache_dir=C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/.ccache arm-none-eabi-gcc -Wl,-Map,../build/software_fbl.map -Os --specs=nosys.specs -TC:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/generated_linkerscript_fn.ld C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/Application/libapplication_lib.a C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/MCAL/libMCAL_lib.a C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU/adaption/main/main.c -o ../build/software_fbl.elf
+[2023-12-25T11:03:29.501414 15668] Hostname: HC-C-00436
+[2023-12-25T11:03:29.501439 15668] Working directory: C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/builder
+[2023-12-25T11:03:29.501842 15668] Compiler: C:\Users\tgr6hc\Downloads\Toolchain\gcc-arm-none-eabi-9-2019-q4-major-win32\bin/arm-none-eabi-gcc.exe
+[2023-12-25T11:03:29.501856 15668] Compiler type: gcc
+[2023-12-25T11:03:29.502273 15668] Called for link with C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/MCAL/libMCAL_lib.a
+[2023-12-25T11:03:29.502387 15668] Multiple input files: C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/Application/libapplication_lib.a and C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU/adaption/main/main.c
+[2023-12-25T11:03:29.502444 15668] Failed; falling back to running the real compiler
+[2023-12-25T11:03:29.502456 15668] Executing C:\Users\tgr6hc\Downloads\Toolchain\gcc-arm-none-eabi-9-2019-q4-major-win32\bin/arm-none-eabi-gcc.exe -Wl,-Map,../build/software_fbl.map -Os --specs=nosys.specs -TC:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/generated_linkerscript_fn.ld C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/Application/libapplication_lib.a C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/build/MCAL/libMCAL_lib.a C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU/adaption/main/main.c -o ../build/software_fbl.elf
+[2023-12-25T11:03:29.502481 15668] Result: called_for_link
+[2023-12-25T11:03:29.502512 15668] Acquiring C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/.ccache/3/4/stats.lock
+[2023-12-25T11:03:29.508885 15668] Acquired C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/.ccache/3/4/stats.lock
+[2023-12-25T11:03:29.510436 15668] Releasing C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/.ccache/3/4/stats.lock
+[2023-12-25T11:03:29.510920 15668] Released C:/Users/tgr6hc/Desktop/Embedded_full/GatewayECU_git/FlashBootLoader/.ccache/3/4/stats.lock

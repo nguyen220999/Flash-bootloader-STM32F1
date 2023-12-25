@@ -1,0 +1,89 @@
+= SOLUTION DOCUMENT - COMMUNICATION BETWEEN MODULES
+Tran Hoang Nguyen 
+1.0, Nov 29, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. Overview or Introduction
+
+Detail imformation about modules communication
+
+== 2. Summary of Existing Functionality (Context)
+
+Development environment of project need more than building SW, it can composite with other tool to gen code, compile code with external library when nessessary.
+
+Development environment need fexible, can easy to add more tool into development SW phase.
+
+== 3. Requirement detail
+
+communication machanism shall prevent conflict between read and write data
+
+== 4. Assumptions and Prerequisites
+
+* Only support 8 bytes data
+
+* Tool verion: To make sure Compatible version. Development environment is packed into package. Avoid overwrite tool in package by other version.
+
+== 5. High-Level Design
+
+* communication machanism
+* Global structure type
+** semaphore token
+** 8 bytes array
+** Metatype
+
+* Global variable is contained in Service handler module.
+* Structure type is contained in public header file and is included in other modules.
+* API is contained in public header file
+* Other module include header file and use API to access variable. 
+
+
+== 6. Low-Level Design
+
+=== 6.1 Metadata structure type
+
+Metadata is a struct store additional information about status of data
+* Include:
+    enum
+
+
+=== 6.2 Semaphore pattern
+
+Semaphore is use to avoid abitration data and inconsitency data when multimodule perform reading and writing variable
+
+=== 6.3 Communication structure type
+
+Communication struture include:
+** Metadata structure type
+** 8 bytes array data type
+** Semaphore data type
+
+== 7. Impact Analysis 
+
+== 8. Out-of-scope
+
+== 9. Risks and Mitigation
+
+== 10. Appendices
+
+|===
+|Term |Definition
+
+|
+|
+
+|===
+
+== 11. Reference
+
+|===
+| Term | Link
+
+|
+|
+|===
+
+

@@ -1,0 +1,88 @@
+= ARCHITECTURE DECISION RECORD - DATA HANDLING
+Tran Hoang Nguyen 
+1.0, Dec 9, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. Information
+
+|===
+| Architecture decision record | 
+
+|Project
+|FBL
+
+|ADR version
+|1.0
+
+|ADR host
+|Tran Hoang Nguyen
+
+|Motivation
+|
+
+|Goal
+|
+
+|Rating/ Stakeholder
+|1. Significant impact on: developer +
+2. Need to coolaborate: +
+3. To be informed about result: developer
+
+|Approval status
+|Open
+
+|===
+
+Revision History
+
+|===
+|Date |Version |Description |Author
+
+|Dec 9, 2023
+|1.0
+|Init version
+|Tran Hoang Nguyen
+
+|===
+
+
+== 2. Context
+
+
+
+== 3. Decision
+
+=== 3.1 Synchronous Messaging Pattern
+
+=== 3.2 Communication between components
+
+
+== 4. Consequences
+
+
+
+
+== 10. Appendices
+
+|===
+|Term |Definition
+
+|
+|
+
+|===
+
+== 11. Reference
+
+|===
+| Term | Link
+
+|ADR Michael Nygard template
+|
+|===
+
+

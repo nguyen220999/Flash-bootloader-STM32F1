@@ -1,0 +1,89 @@
+= SOLUTION DOCUMENT - SOFTWARE INTERLOCK
+Tran Hoang Nguyen 
+1.0, Nov 29, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. Overview or Introduction
+
+To assure write/erase flash with trust. FBL need mechanism to prevent using flash driver unaccepted.
+Decrease ROM size of FBL.
+
+== 2. Summary of Existing Functionality (Context)
+
+Development environment of project need more than building SW, it can composite with other tool to gen code, compile code with external library when nessessary.
+
+Development environment need fexible, can easy to add more tool into development SW phase.
+
+== 3. Requirement detail
+
+Security of write and erase application software
+
+== 4. Assumptions and Prerequisites
+
+* Only support 8 bytes data
+
+* Tool verion
+
+== 5. High-Level Design
+
+* Flash driver is not include in FBL software
+
+* In case Host system need request update application software, It need to request download flash driver from tool to RAM of FBL system
+
+* FBL receive flash driver from host system and update it to RAM
+
+* 
+
+
+== 6. Low-Level Design
+
+=== 6.1 API flash address
+
+Adderss to store each flash API is align between FBL and host system
+
+Address of API:
+
+
+
+=== 6.2 Using API of FBL
+
+FBL will create variable to store address of API
+
+Function pointer is used to call API 
+
+
+=== 6.3 Checking vadility of API
+
+
+
+
+== 7. Impact Analysis 
+
+== 8. Out-of-scope
+
+== 9. Risks and Mitigation
+
+== 10. Appendices
+
+|===
+|Term |Definition
+
+|
+|
+
+|===
+
+== 11. Reference
+
+|===
+| Term | Link
+
+|
+|
+|===
+
+

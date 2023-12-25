@@ -1,0 +1,156 @@
+<mxfile host="Electron" modified="2023-12-07T12:06:35.086Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="uZz2w-moqqsi-194nSJd" version="21.5.1" type="device">
+  <diagram name="Env-Dev" id="uR18QYMF6p9PCbFV5IYF">
+    <mxGraphModel dx="683" dy="421" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-42" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="220" width="465" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-42">
+          <mxGeometry width="465" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-24" value="Development environment&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-42">
+          <mxGeometry width="465" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-25" value="Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-42">
+          <mxGeometry x="320" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-43" value="Git" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-42">
+          <mxGeometry x="320" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-2" value="Build Toolchain" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="390" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-3" value="Cmake" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="540" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-4" value="Make" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="390" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-5" value="CCache" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="540" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-7" target="tig4mWkhuEzKpvRcBq7Y-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="690" y="530" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="660" as="targetPoint" />
+            <mxPoint x="409.6899999999999" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-9" value="Cmake" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-11" target="tig4mWkhuEzKpvRcBq7Y-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-11" value="Configurate cmake&lt;br&gt;Configurate compile option&lt;br&gt;List of include file&lt;br&gt;List of build file&amp;nbsp;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="615" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-12" value="CMakeLists.txt" style="resizeWidth=1;part=1;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-11">
+          <mxGeometry width="160" height="25" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-14" target="tig4mWkhuEzKpvRcBq7Y-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-14" value="Rule to build software" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="450" y="630" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-15" value="Makefile" style="resizeWidth=1;part=1;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-14">
+          <mxGeometry width="130" height="25" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-17" value="make" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="550" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-19" target="tig4mWkhuEzKpvRcBq7Y-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="660" />
+              <mxPoint x="890" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-19" value="Build process" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-20" value="Compiler&lt;br&gt;Assembler&lt;br&gt;Linker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-21" value="ccache" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="830" y="540" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-22" value="" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="890" y="635" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-23" value="Executable file" style="resizeWidth=1;part=1;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-22">
+          <mxGeometry width="119.99999999999999" height="25" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-26" target="tig4mWkhuEzKpvRcBq7Y-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-26" value="" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="630" y="730" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-27" value="Linker script" style="resizeWidth=1;part=1;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-26">
+          <mxGeometry width="119.99999999999999" height="25" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-29" value="Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="540" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-30" value="" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="730" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-31" value="Linker script&lt;br&gt;Template" style="resizeWidth=1;part=1;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-30">
+          <mxGeometry width="120" height="40" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.01;entryY=0.584;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-31" target="tig4mWkhuEzKpvRcBq7Y-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="740" as="sourcePoint" />
+            <mxPoint x="660" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="tig4mWkhuEzKpvRcBq7Y-35" target="tig4mWkhuEzKpvRcBq7Y-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-35" value="" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="840" y="730" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-36" value="Source file" style="resizeWidth=1;part=1;html=1;strokeColor=none;fillColor=none;align=left;spacingLeft=5;whiteSpace=wrap;" vertex="1" parent="tig4mWkhuEzKpvRcBq7Y-35">
+          <mxGeometry width="119.99999999999999" height="25" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-38" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeColor=none;fillColor=#8f2d2d;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="900" as="sourcePoint" />
+            <mxPoint x="940" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tig4mWkhuEzKpvRcBq7Y-39" value="Builder bat script" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="900" width="240" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

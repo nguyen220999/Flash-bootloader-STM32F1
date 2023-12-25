@@ -1,0 +1,130 @@
+= DDD - COMMUNICATION BETWEEN MODULES
+Tran Hoang Nguyen 
+1.0, Nov 29, 2023
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== 1. General information
+
+|===
+| Design decision document | 
+
+|Project
+|FBL
+
+|DDD version
+|1.0
+
+|DDD host
+|Tran Hoang Nguyen
+
+|Motivation
+|SW need a machanism to transfer data between modules 
+
+|Goal
+|This DDD aim to choose suitable machanism to transfer data
+
+|Rating/ Stakeholder
+|1. Significant impact on: developer +
+2. Need to coolaborate: +
+3. To be informed about result: developer
+
+|Decision
+| brief description
+
+|Approval status
+|Open
+
+|===
+
+== 2. Problem description
+Need method can be fexible in setup building software to add tool in order to increase performance in build 
+
+_Constraints:_
+NA
+
+== 3. Solution Alternatives
+
+=== 3.1 Global variable - One-for-all (Solution A)
+One variable to communicate between modules
+
+=== 3.2 Global variable - Multi-for-all (Solution B)
+Each linkage communication will have difference variable
+
+== 4. Design Decision Criteria’s/ Architecture divers
+=== 4.1 Complexity, Modularity
+Easy to handle
+
+=== 4.2 Reusability, Portability, Deployability
+
+
+== 5. Evaluation of solutions
+
+|===
+|Summary |Solution A |Solution B
+
+|Short description
+|
+|
+
+|Detail description
+|
+|
+
+|Benefits
+|
+|
+
+|Weakness
+|
+|
+
+|Evaluation/Assessment (*)
+|
+|
+
+|Complexity
+|+
+|-
+
+|Modularity
+|-
+|+
+
+|Reusability, Portability, Deployability
+|
+|
+
+|Reuse, Make or buy
+|
+|
+
+|Flexibility, Modifiability, Scalability, Maintainability
+|
+|
+
+|Technical Feasibility
+|
+|
+
+|Project-specific Evaluation / Assessment criteria
+|(Architecture driver)
+|
+
+|
+|
+|
+
+|===
+
+(*)Define the rating for the evaluation here:e.g. ++, +, o, -, -- or 1, 2, 3, 4, 5
+
+== 6. Design Decision Conclusion
+_Solution B_
+
+== 7. References
+
+== Contact
